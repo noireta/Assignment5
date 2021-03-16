@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1 {margin-bottom: 30px;}
+        label {font-weight: bold;}
+        input, select {margin-bottom: 10px;}
+        form {width: 30%; padding: 20px;}
+        #empForm {border: 2px solid red;}
+    </style>
+</head>
+<body class="mt-2 ml-4">
+    <h1>Employee Management System</h1>
+    <!--form work start-->
+   
+    <form action="" id="empForm" >
+       
+        <div class="col-md-6">
+              <label for="inputID" class="form-label">8-Digit Emplayee ID :</label>
+              <input type="text" name="ID" class="form-control" id="inputID" maxlength="8" required> 
+        </div>
+
+        <div class="col-md-6">
+            <label for="inputName" class="form-label"> Full Name:</label>
+            <input type="text" name="Name" class="form-control" id="inputName" maxlength="A-Z a-z" required> 
+      </div>
+
+        <div class="col-md-6">
+            <label for="inputExt" class="form-label">4-Digit Extention :</label>
+            <input type="text" name="Extension" class="form-control" id="inpuExt" maxlength="4" required>
+        </div>
+
+       <div class="col-md-6">
+           <label for="inputEmail" class="form-label">Email :</label>
+           <input type="text"  name="Email" class="form-control" id="inputEmail" maxlength="A-Z a-z 0-9" required>
+        </div>
+
+        <div class="col-md-4">
+            <label for="inputDep" class="form-label">Department :</label>
+        <select id="inputDep" name="Department" class="form-select">
+             <option selected>Administrative</option>
+             <option>...</option>
+        </select>
+        </div>
+
+        <div class="col-auto">
+            
+            <button type="Add Employee" class="btn btn-primary">Add Employee</button>
+          </div>
+   
+    </form>
+
+    <!--form work done-->
+</body>
+</html>
